@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Notes 📝 ">
+    <meta name="keywords" content="Online Notes 📝 ">
+    <title>Online Notes 📝 </title>
+    <!-- iNstall fontawesome- -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Install Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Install main Css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand " href="#">Online Notes 📝 </a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse flex-grow-0 navbar-collapse" id="collapsibleNavId">
+          <form class="d-flex   my-2 my-lg-0">
+              <input class="form-control me-sm-2" onkeyup="searchData(this.value) " type="text" placeholder="Search">
+              
+          </form>
+      </div>
+   </div>
+ </nav>
+<!-- Card -->
+<div id="popup-box">
+  <div id="popup">
+    <div class="content">
+        <header>
+          <p class="fw-bold">Add a new Note</p>
+          <i class="fa-solid fa-circle-xmark " id="close"></i>
+        </header>
+        <div class="form">
+          <div class="row title mt-4">
+            <label for="title"> Title </label>
+            <input type="text" id="title" class="form-control">
+          </div>
+          <div class="row description mt-4">
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+          </div>
+          <button class="btn btn-info mt-5 w-100" id="add">Add Note</button>
+        </div>
+      </div>
+
+
+
+
+  </div>
+</div>
+<section class="container my-5">
+  <div class="row" >
+    <div class=" col-11 me-1 col-md-4 col-xl-4 col-xl-4 ">
+        <div class="card box">
+            <div id="icons">
+                <i class="fa-solid fa-plus" id="icon"></i>
+            </div>
+            <p class="lead">Add New Note</p>
+        </div>
+    </div>
+  </div>
+  <div class="row" id="cardData">
+
+  </div>
+</section>
+    <!-- Install Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
